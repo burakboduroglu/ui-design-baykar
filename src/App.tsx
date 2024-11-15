@@ -1,10 +1,14 @@
+import Header from "./components/Header/Header.tsx";
+import Hero from "./components/Hero/Hero.tsx";
+
 function App() {
     return (
-        <>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </>
+        <div className="bg-[#FDF9F3] min-h-screen font-sans">
+            {/* Header */}
+            <Header/>
+            {/* Hero Section */}
+            <Hero/>
+        </div>
     )
 }
 
