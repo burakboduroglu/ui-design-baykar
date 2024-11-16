@@ -7,8 +7,8 @@ export default function Hero() {
         <>
             {/* Hero Background */}
             <div
-                className="absolute bottom-0 inset-x-0 h-3/4 bg-[#FEF3C7]"
-                style={{clipPath: 'polygon(5% 100%, 100% 0, 100% 100%, 0 100%)'}}
+                className="absolute bottom-0 inset-x-0 md:h-3/4 bg-[#FEF3C7] lg:h-2/3 hero"
+                style={{clipPath: 'polygon(25% 100%, 100% 0, 100% 100%, 0 100%)'}}
             ></div>
             <main className="px-6 py-12 max-w-7xl mx-auto font-roboto text-heroColor relative w-full overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
