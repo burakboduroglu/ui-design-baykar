@@ -6,6 +6,7 @@ function App() {
         <div className="bg-[#FDF9F3] min-h-screen font-sans">
             {/* Header */}
             <Header/>
+
             {/* Hero Section */}
             <Hero/>
         </div>
