@@ -13,7 +13,7 @@ export default function Hero() {
                 }}
             />
             <main
-                className="px-6 py-12 max-w-7xl mx-auto font-roboto text-heroColor relative w-full overflow-hidden">
+                className="px-6 py-10 max-w-7xl mx-auto font-roboto text-heroColor relative w-full overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Hero Content */}
                     <HeroContent/>

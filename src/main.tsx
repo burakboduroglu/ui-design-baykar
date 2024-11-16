@@ -7,7 +7,6 @@ import {
 import React from 'react';
 import App from "./App.tsx";
 
-
 const router = createBrowserRouter([
     {
         path: "/",
