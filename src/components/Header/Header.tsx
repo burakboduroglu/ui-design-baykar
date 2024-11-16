@@ -12,7 +12,7 @@ export default function Header() {
                     {
                         [
                             {name: 'Products', link: 'shop'},
-                            {name: 'Solutions', link: 'solutions'},
+                            {name: 'About', link: 'solutions'},
                             {name: 'Pricing', link: 'pricing'},
                             {name: 'Resources', link: 'resources'},
                             {name: 'Log In', link: 'login'},
