@@ -1,5 +1,6 @@
 // @ts-ignore
 import { Link } from "react-scroll";
+import {headers} from "@/lib/data.ts";
 
 export default function Header() {
     return (
@@ -10,14 +11,7 @@ export default function Header() {
                 </Link>
                 <div className="hidden md:flex items-center space-x-8">
                     {
-                        [
-                            {name: 'Products', link: 'shop'},
-                            {name: 'About', link: 'solutions'},
-                            {name: 'Pricing', link: 'pricing'},
-                            {name: 'Resources', link: 'resources'},
-                            {name: 'Log In', link: 'login'},
-                            {name: 'Sign up now', link: 'signup'},
-                        ].map((navItem, index) => (
+                        headers.map((navItem, index) => (
                             <nav className="flex text-headerColor text-base font-medium gap-2 pt-3 pb-3 pr-2 pl-2" key={navItem.name}>
                                 {index === 5 ? (
                                     <Link to={navItem.link} smooth={true} duration={500} className="p-3 border-2 rounded-lg border-headerColor cursor-pointer">

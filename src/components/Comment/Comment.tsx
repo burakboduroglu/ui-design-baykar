@@ -53,8 +53,9 @@ export default function Comment() {
                         className="flex-shrink-0 md:w-96 lg:w-80 snap-center w-full p-3">
 
                         <div className="bg-white h-full flex flex-col justify-between pt-8 shadow-xl rounded-2xl p-6">
-                            <div>
-                                <div className="h-10 w-10 mb-4 text-[#475569]">
+                            <div className="p-1">
+                                <div className="flex gap-3 h-10 w-full mb-4 text-[#475569]">
+                                    <img src={`/img/company/${comment.company.logo}`} alt={comment.company.name} className="h-6 w-6"/>
                                     <p className="font-extrabold">{comment.company.name}</p>
                                 </div>
                                 <p className="font-normal text-base mb-4">{comment.content}</p>

@@ -7,7 +7,7 @@ export const comments = [
         avatar: "1.png",
         company: {
             name: "Zoomerr",
-            logo: ""
+            logo: "1.png"
         }
     },
     {
@@ -18,7 +18,7 @@ export const comments = [
         avatar: "2.png",
         company: {
             name: "SHELLS",
-            logo: ""
+            logo: "2.png"
         }
     },
     {
@@ -29,7 +29,7 @@ export const comments = [
         avatar: "3.png",
         company: {
             name: "ArtVenue",
-            logo: ""
+            logo: "1.png"
         }
     },
     {
@@ -40,7 +40,7 @@ export const comments = [
         avatar: "4.png",
         company: {
             name: "WAVES",
-            logo: ""
+            logo: "3.png"
         }
     },
     {
@@ -51,7 +51,37 @@ export const comments = [
         avatar: "5.png",
         company: {
             name: "Zoomerr",
-            logo: ""
+            logo: "4.png"
         }
+    },
+]
+
+export const headers = [
+    {name: 'Products', link: 'shop'},
+    {name: 'About', link: 'solutions'},
+    {name: 'Pricing', link: 'pricing'},
+    {name: 'Resources', link: 'resources'},
+    {name: 'Log In', link: 'login'},
+    {name: 'Sign up now', link: 'signup'},
+]
+
+export const products = [
+    {
+        id: 1,
+        image: "/img/products/1.png",
+        title: "Title",
+        description: "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
+    },
+    {
+        id: 2,
+        image: "/img/products/2.png",
+        title: "Title",
+        description: "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
+    },
+    {
+        id: 3,
+        image: "/img/products/3.png",
+        title: "Title",
+        description: "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
     },
 ]

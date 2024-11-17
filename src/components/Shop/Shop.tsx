@@ -1,27 +1,7 @@
+import { products } from "@/lib/data";
 import {Cart} from "iconoir-react";
 
 export default function Shop() {
-    const products = [
-        {
-            id: 1,
-            image: "/img/products/1.png",
-            title: "Title",
-            description: "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
-        },
-        {
-            id: 2,
-            image: "/img/products/2.png",
-            title: "Title",
-            description: "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
-        },
-        {
-            id: 3,
-            image: "/img/products/3.png",
-            title: "Title",
-            description: "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
-        },
-    ]
-
     return (
         <div className="bg-[#0F172A] min-h-screen p-8">
             <div className="max-w-7xl mx-auto">
