@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero.tsx';
 import Shop from './components/Shop/Shop.tsx';
 import About from './components/About/About.tsx';
 import Comment from './components/Comment/Comment.tsx';
+import Grow from './components/Grow/Grow.tsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </div>
       <About />
       <Comment />
+      <Grow />
     </div>
   );
 }
