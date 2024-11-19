@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 
 export default function HeroContent() {
   return (
-    <section className='space-y-6'>
+    <section className='space-y-6 text-center lg:text-start'>
       <h1 className=' text-6xl font-extrabold'>Collectible Sneakers</h1>
       <p className='text-lg font-normal'>
         Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem
         mauris. Pharetra, eu imperdiet ipsum ultrices amet.
       </p>
-      <div className='flex items-center space-x-4 text-headerColor text-base font-medium gap-4'>
+      <div className='flex items-center justify-center lg:justify-start space-x-4 text-headerColor text-base font-medium gap-4'>
         <Link to='/signup' className='p-3 gap-2 border-2 rounded-lg border-headerColor'>
           Sign up now
         </Link>

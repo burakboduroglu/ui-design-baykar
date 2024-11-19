@@ -5,11 +5,11 @@ import { Facebook, Globe, Instagram, Linkedin, Twitter, Youtube } from 'lucide-r
 
 export default function Footer() {
   return (
-    <footer className='w-full bg-[#0F172A] text-[#E2E8F0] pl-36 pr-36'>
+    <footer className='w-full bg-[#0F172A] text-[#E2E8F0] pl-36 pr-36 text-center lg:text-start'>
       <div className='container mx-auto px-4 py-12'>
-        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+        <div className='lg:grid lg:grid-cols-4 gap-8 flex flex-col'>
           {/* Product Column */}
-          <div className='space-y-4'>
+          <div className='space-y-4 pb-10 lg:pb-0'>
             <h3 className='font-semibold mb-6'>Product</h3>
             <div className='flex flex-col space-y-3 text-sm gap-[18px]'>
               <Link to='#' className='hover:text-white transition-colors'>
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           {/* Solutions Column */}
-          <div className='space-y-4'>
+          <div className='space-y-4 pb-10 lg:pb-0'>
             <h3 className='font-semibold mb-6'>Solutions</h3>
             <div className='flex flex-col space-y-3 text-sm gap-[18px]'>
               <Link to='#' className='hover:text-white transition-colors'>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* Support Column */}
-          <div className='space-y-4'>
+          <div className='space-y-4 pb-10 lg:pb-0'>
             <h3 className='font-semibold mb-6'>Support</h3>
             <div className='flex flex-col space-y-3 text-sm gap-[18px]'>
               <Link to='#' className='hover:text-white transition-colors'>
@@ -75,16 +75,22 @@ export default function Footer() {
           </div>
 
           {/* Get the App Column and Social Media */}
-          <div className='space-y-4 col-span-2 md:col-span-1'>
+          <div className='space-y-4 col-span-1 lg:pb-0'>
             <h3 className='font-semibold mb-6'>Get the App</h3>
-            <div className='flex flex-col space-y-3'>
-              <Link to='#' className='w-36 border border-black bg-black flex rounded-xl gap-3 p-3'>
+            <div className='flex flex-col space-y-3 items-center lg:items-start'>
+              <Link
+                to='#'
+                className='w-36 border border-gray-400 bg-black flex rounded-xl gap-3 p-3'
+              >
                 <img src='/img/app-logo/apple.svg' width={24} height={24} />
                 <p className='text-[8px] flex flex-col'>
                   Download on the<span className='text-sm'>App Store</span>
                 </p>
               </Link>
-              <Link to='#' className='w-36 border border-black bg-black flex rounded-xl gap-3 p-3'>
+              <Link
+                to='#'
+                className='w-36 border border-gray-400 bg-black flex rounded-xl gap-3 p-3'
+              >
                 <img src='/img/app-logo/google-play-icon.svg' height={20} width={20} />
                 <p className='text-[8px] flex flex-col'>
                   Get it on <span className='text-sm'>Google Play</span>
@@ -119,11 +125,11 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className='border-t border-gray-800'>
-        <div className='container mx-auto px-4 py-4'>
-          <div className='flex flex-col md:flex-row justify-between items-center text-sm'>
+      <div className='border-t border-gray-800 pt-10 lg:pt-0'>
+        <div className='container mx-auto lg:px-3 py-4'>
+          <div className='flex flex-col lg:flex-row justify-between items-center text-xs lg:text-sm'>
             <div>Collers © 2023. All rights reserved.</div>
-            <div className='flex items-center space-x-4 mt-4 md:mt-0'>
+            <div className='flex items-center space-x-4 mt-4'>
               <Link to='#' className='hover:text-white transition-colors'>
                 Terms
               </Link>

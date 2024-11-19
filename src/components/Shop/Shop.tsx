@@ -11,15 +11,15 @@ export default function Shop() {
     >
       <div className='max-w-7xl mx-auto'>
         {/* Shop Header */}
-        <div className='flex justify-between items-center mb-12'>
-          <h1 className='text-4xl font-bold text-white'>The best of the best</h1>
-          <button className='text-lg px-6 py-2 rounded-lg border-2 border-white text-white hover:bg-white/10 transition-colors'>
+        <div className='flex lg:justify-between items-center mb-5 lg:mb-12 flex-col justify-center md:items-center'>
+          <h1 className='text-2xl lg:text-4xl font-bold text-white'>The best of the best</h1>
+          <button className='lg:pt-0 mt-5 text-lg px-6 py-2 rounded-lg border-2 border-white text-white hover:bg-white/10 transition-colors'>
             Sign up now
           </button>
         </div>
 
         {/* Product Grid */}
-        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 '>
+        <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {products.map((product) => (
             <div key={product.id} className='relative group m-3'>
               {/* Card Content */}

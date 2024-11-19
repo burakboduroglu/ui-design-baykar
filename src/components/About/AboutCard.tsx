@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 export default function AboutCard() {
   return (
-    <div className='w-3/4 rounded-2xl overflow-hidden shadow-2xl bg-white p-16 font-roboto m-28'>
-      <div className='grid grid-cols-2 gap-4'>
+    <div className='w-full lg:w-3/4 rounded-2xl overflow-hidden shadow-2xl bg-white lg:p-16 font-roboto m-5 lg:m-28 pl-5 pr-5'>
+      <div className='lg:grid lg:grid-cols-2 lg:gap-4 flex flex-col'>
         <div className='gap-24 pt-5'>
-          <h2 className='font-bold text-3xl pb-5'>Why join us</h2>
-          <div className='text-base pt-3'>
+          <h2 className='font-bold text-2xl pb-5 text-center lg:text-start'>Why join us</h2>
+          <div className='lg:text-base pt-3 text-sm'>
             <ul className='space-y-2'>
               <li className='flex items-start'>
                 <span className='text-[#15803D] mr-2'>✓</span>
@@ -22,7 +22,7 @@ export default function AboutCard() {
               </li>
             </ul>
           </div>
-          <div className='mt-12'>
+          <div className='mt-12 lg:text-start text-center'>
             <Link
               className='p-3 border-2 rounded-lg border-headerColor cursor-pointer text-headerColor'
               to='/'
@@ -32,7 +32,7 @@ export default function AboutCard() {
           </div>
         </div>
         <div
-          className='relative ml-16 shadow-2xl p-3 rounded-2xl bg-no-repeat bg-left bg-cover overflow-auto'
+          className='lg:ml-16 lg:mt-0 mt-10 shadow-2xl p-3 rounded-2xl bg-no-repeat bg-left bg-cover overflow-auto'
           style={{
             backgroundImage: 'url(/img/Backlights.png)',
           }}

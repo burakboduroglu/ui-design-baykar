@@ -17,11 +17,9 @@ export default function Comment() {
 
   return (
     <section className='relative 3xl:w-full max-w-6xl mx-auto px-6 py-12 font-roboto'>
-      {/* Title and Buttons */}
-      <div className='flex justify-between items-center mb-8'>
-        <h1 className='text-4xl font-bold'>Because they love us</h1>
-        {/* Scroll buttons */}
-        <div className='flex gap-3'>
+      <div className='text-center lg:flex lg:justify-between mb-8'>
+        <h1 className='text-2xl  lg:text-4xl font-bold'>Because they love us</h1>
+        <div className='hidden lg:flex gap-3'>
           <Button variant='custom' size='icon' onClick={() => scroll('left')}>
             <MoveLeft className='h-3 w-3' />
           </Button>
@@ -30,8 +28,6 @@ export default function Comment() {
           </Button>
         </div>
       </div>
-
-      {/* Comments */}
       <div
         ref={sliderRef}
         className='flex overflow-x-auto scrollbar-hide bg-no-repeat bg-top bg-contain gap-3 pt-5'
