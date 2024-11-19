@@ -40,7 +40,7 @@ export default function Grow() {
           <div className='flex justify-center items-center w-full'>
             <div className='flex items-center justify-center pl-56'>
               <div className='items-center justify-center'>
-                <img src='/img/Col.png' alt='Sneaker' className='h-full w-full' />
+                <img src='/img/grow/Col.png' alt='Sneaker' className='h-full w-full' />
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ import Location from './components/Location/Location.tsx';
 
 function App() {
   return (
-    <div className='bg-[#FFFCF2] min-h-screen font-sans'>
+    <div className='bg-[#FFFCF2] min-h-screen font-roboto'>
       <Header />
       <Hero />
       <div id='shop'>
