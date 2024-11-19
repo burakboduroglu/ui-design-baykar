@@ -5,13 +5,13 @@ import { Facebook, Globe, Instagram, Linkedin, Twitter, Youtube } from 'lucide-r
 
 export default function Footer() {
   return (
-    <footer className='w-full bg-[#0D1117] text-gray-200'>
+    <footer className='w-full bg-[#0F172A] text-[#E2E8F0] pl-36 pr-36'>
       <div className='container mx-auto px-4 py-12'>
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'>
           {/* Product Column */}
           <div className='space-y-4'>
             <h3 className='font-semibold mb-6'>Product</h3>
-            <div className='flex flex-col space-y-3 text-sm text-gray-400'>
+            <div className='flex flex-col space-y-3 text-sm gap-[18px]'>
               <Link to='#' className='hover:text-white transition-colors'>
                 Pricing
               </Link>
@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Solutions Column */}
           <div className='space-y-4'>
             <h3 className='font-semibold mb-6'>Solutions</h3>
-            <div className='flex flex-col space-y-3 text-sm text-gray-400'>
+            <div className='flex flex-col space-y-3 text-sm gap-[18px]'>
               <Link to='#' className='hover:text-white transition-colors'>
                 Brainstorming
               </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Support Column */}
           <div className='space-y-4'>
             <h3 className='font-semibold mb-6'>Support</h3>
-            <div className='flex flex-col space-y-3 text-sm text-gray-400'>
+            <div className='flex flex-col space-y-3 text-sm gap-[18px]'>
               <Link to='#' className='hover:text-white transition-colors'>
                 Contact Us
               </Link>
@@ -74,29 +74,25 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Get the App Column */}
+          {/* Get the App Column and Social Media */}
           <div className='space-y-4 col-span-2 md:col-span-1'>
             <h3 className='font-semibold mb-6'>Get the App</h3>
             <div className='flex flex-col space-y-3'>
-              <Link to='#' className='w-36 border border-black bg-black flex rounded-xl gap-1 p-3'>
-                <img src='/img/app-logo/apple.png' width={24} height={18} />
-                <p className='text-[6px] flex flex-col'>
+              <Link to='#' className='w-36 border border-black bg-black flex rounded-xl gap-3 p-3'>
+                <img src='/img/app-logo/apple.svg' width={24} height={24} />
+                <p className='text-[8px] flex flex-col'>
                   Download on the<span className='text-sm'>App Store</span>
                 </p>
               </Link>
-              <Link to='#' className='w-36 border border-black bg-black flex rounded-xl gap-1 p-3'>
-                <img src='/img/app-logo/google-play-icon.svg' height={24} width={24} />
-                <p className='text-[6px] flex flex-col'>
+              <Link to='#' className='w-36 border border-black bg-black flex rounded-xl gap-3 p-3'>
+                <img src='/img/app-logo/google-play-icon.svg' height={20} width={20} />
+                <p className='text-[8px] flex flex-col'>
                   Get it on <span className='text-sm'>Google Play</span>
                 </p>
               </Link>
             </div>
-          </div>
-
-          {/* Follow Us Column */}
-          <div className='space-y-4 col-span-2 md:col-span-1'>
-            <h3 className='font-semibold mb-6'>Follow Us</h3>
-            <div className='flex space-x-4'>
+            <h3 className='font-semibold mb-6 pt-5'>Follow Us</h3>
+            <div className='flex space-x-6'>
               <Link to='#' className='hover:text-white transition-colors'>
                 <Youtube className='h-5 w-5' />
                 <span className='sr-only'>YouTube</span>
@@ -125,7 +121,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className='border-t border-gray-800'>
         <div className='container mx-auto px-4 py-4'>
-          <div className='flex flex-col md:flex-row justify-between items-center text-sm text-gray-400'>
+          <div className='flex flex-col md:flex-row justify-between items-center text-sm'>
             <div>Collers © 2023. All rights reserved.</div>
             <div className='flex items-center space-x-4 mt-4 md:mt-0'>
               <Link to='#' className='hover:text-white transition-colors'>

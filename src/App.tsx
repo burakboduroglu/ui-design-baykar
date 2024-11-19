@@ -5,6 +5,7 @@ import About from './components/About/About.tsx';
 import Comment from './components/Comment/Comment.tsx';
 import Grow from './components/Grow/Grow.tsx';
 import Footer from './components/Footer/Footer.tsx';
+import Location from './components/Location/Location.tsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Comment />
       <Grow />
+      <Location />
       <Footer />
     </div>
   );
